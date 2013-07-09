@@ -28,6 +28,14 @@ $if(math)$
 $endif$
 $for(header-includes)$
   $header-includes$
+$if(addScripts)$
+ $addScripts$
+$endif$
+$if(hsAddFiles)$
+ <script language="javascript">
+   $hsAddFiles$
+ </script>
+$endif$
 $endfor$
 </head>
 <body>

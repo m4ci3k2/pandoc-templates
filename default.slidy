@@ -36,6 +36,14 @@ $endfor$
 $if(duration)$
   <meta name="duration" content="$duration$" />
 $endif$
+$if(addScripts)$
+ $addScripts$
+$endif$
+$if(hsAddFiles)$
+ <script language="javascript">
+   $hsAddFiles$
+ </script>
+$endif$
 </head>
 <body>
 $for(include-before)$
